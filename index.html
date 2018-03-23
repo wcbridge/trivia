@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Trivia</title>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>TRIVIA!</h1>
+
+    <div id="quiz"></div>
+    <!-- <button id="submit">Get Results</button> -->
+    <!-- <div id="results">
+        you madeit
+    </div> -->
+
+    <h1>Question One !</h1>
+    <p id="q1">What is your quest?</p>
+    <label class="container">
+        <input type="radio" id='grail' name="q1" value="a1">
+        To Find the Holy Grail
+    </label>
+    <label class="container">
+        <input type="radio" name="q1" value="b1">
+        No
+    
+    </label>
+    <h1>Question Two !</h1>
+    <p id="q2">What is your favorite color?</p>
+    <label class="container">
+        <input type="radio" id='blue' name="q2" value="a2">
+        Blue
+
+    </label>
+    <label class="container">
+        <input type="radio" name="q2" value="b2">
+        No
+        
+    </label>
+    
+    <h1>Question Three !</h1>
+    <p id="q3">What is the capital of Assyria?</p>
+    <label class="container">
+        <input type="radio" id='assyria' name="q3" value="a3">
+        Assur  
+    </label>
+    <label class="container">
+        <input type="radio" name="q3" value="b3">
+        Constantia
+    
+    </label>
+    <label class="container">
+        <input type="radio" name="q3" value="c3">
+        I don't know that
+    
+    </label>
+    
+    <h1>Question Four !</h1>
+    <p id="q4">What is the air-speed velocity of a swallow?</p>
+    <label class="container">
+        <input type="radio" name="q4" id='swallow' value="a4">
+        Is that an African or a European swallow?
+        
+    </label>
+    <label class="container">
+        <input type="radio" name="q4" value="b4">
+        23 knots
+ 
+    </label>
+    <label class="container">
+        <input type="radio" name="q4" value="c4">
+        I don't know that
+       
+    </label>
+
+<div id="results">
+    <p id="correct"></p>
+    <p id="wrong"></p>
+</div>
+
+<input type="button" value="submit" onclick="check()">
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
