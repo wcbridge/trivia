@@ -1,0 +1,35 @@
+body{
+    color: antiquewhite;
+    background: black;
+}
+
+.header {
+    background-color: black;
+    text-align: center;
+    color: azure;
+    padding: 2%;
+}
+
+.jumbotron {
+    background-image:url("images/Bridge.jpg");
+    background-repeat: no-repeat;
+    align-content: center;
+    background-size: cover;
+}
+
+.quiz {
+    margin-left: 10%;
+}
+
+.rest{
+    margin-top: 20%;
+}
+
+#timer {
+    font-size: 200%;
+}
+
+#results {
+    visibility: hidden;
+    font-size: 300%;
+} 

@@ -3,19 +3,17 @@
 <head>
     
     <title>Trivia</title>
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="assets/main.js"></script>
 </head>
 <body>
-    <h1>TRIVIA!</h1>
-
-    <div id="quiz"></div>
-    <!-- <button id="submit">Get Results</button> -->
-    <!-- <div id="results">
-        you madeit
-    </div> -->
+    <h1 class="header">THE BRIDGE OF DEATH!</h1>
+<div class="row jumbotron">
+    <div class="col col-6">
+    <div class= "quiz">
 
     <h1>Question One !</h1>
     <p id="q1">What is your quest?</p>
@@ -75,15 +73,17 @@
         I don't know that
        
     </label>
-
+    </div>
+    </div>
+<div class="col col-6 rest">
+    <div id="timer"></div>
 <div id="results">
     <p id="correct"></p>
     <p id="wrong"></p>
 </div>
-<div id="timer"></div>
-
 <input type="button" value="submit" onclick="check()">
-   
+</div>   
+</div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>

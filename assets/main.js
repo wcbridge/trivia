@@ -1,5 +1,5 @@
 
-var timer = 20
+var timer = 30
 var correct = 0;
 var wrong = 0;
 
@@ -9,7 +9,7 @@ function run() {
     intervalId = setInterval(decrement, 1000);
 }
 function decrement() {
-    document.getElementById('timer').innerHTML = `TIME!: ${timer}`;
+    document.getElementById('timer').innerHTML = `Time Remaining : ${timer}`;
     timer--;
     if (timer === 0) {
         stop();
@@ -48,12 +48,13 @@ function check() {
     }
     document.getElementById('correct').innerHTML =`Correct: ${correct}`;
     document.getElementById('wrong').innerHTML = `Wrong: ${wrong}`;
+    if (timer>0) {
+        document.getElementById("timer").style.visibility = "hidden";
+    }
     if (correct+wrong>4){
         document.getElementById('correct').innerHTML = `PLEASE!`;
         document.getElementById('wrong').innerHTML = `NO MORE!`;
     }
 };
 
-//count()
-//console.log(timer);
 
