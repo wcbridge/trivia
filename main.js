@@ -1,51 +1,31 @@
-// var q = [
-//     {
-//     question: "What is your quest?",
-//     answers: {
-//         a: "To find the Holy Grail",
-//         b: "To go to Toledo",
-//         c: "to get some marmalade",
-//     },
-//         correctAnswer: "a",
-//     },
 
-//     {
-//     question: "What is your favorite color?",
-//     answers: {
-//         a: "blue",
-//         b: "no",
-
-//     },
-//     correctAnswer: "a",
-// },
-// 	{
-//         question: "What is the capital of asyria?",
-//         answers: {
-//             a: "Assur",
-//             b: "Constantia",
-//             c: "I don't know that",
-//         },
-//         correctAnswer: 'a',
-//     },
-//     {
-//         question: "What is the air speed velocity of a swallow?",
-//         answers: {
-//             a: "African or European swallow?",
-//             b: "23 knots",
-//             c: "I don't know that"
-//         },
-//         correctAnswer: 'a',
-//     },
-// ];
-var timer = 30
+var timer = 20
 var correct = 0;
 var wrong = 0;
-var name = ['grail','blue', 'assyria', 'swallow'];
 
+var intervalId;
+function run() {
+     clearInterval(intervalId);
+    intervalId = setInterval(decrement, 1000);
+}
+function decrement() {
+    document.getElementById('timer').innerHTML = `TIME!: ${timer}`;
+    timer--;
+    if (timer === 0) {
+        stop();
+        document.getElementById('timer').innerHTML = 'TIME UP!';
+        check();
+    }
+}
+function stop() {
+    clearInterval(intervalId);
+}
+
+run()
 
 function check() {
     document.getElementById("results").style.visibility = "visible";
-    console.log('hi')
+   // console.log('hi')
     if(document.getElementById('grail').checked) {
         correct++
     } else {
@@ -67,12 +47,13 @@ function check() {
         wrong++
     }
     document.getElementById('correct').innerHTML =`Correct: ${correct}`;
+    document.getElementById('wrong').innerHTML = `Wrong: ${wrong}`;
+    if (correct+wrong>4){
+        document.getElementById('correct').innerHTML = `PLEASE!`;
+        document.getElementById('wrong').innerHTML = `NO MORE!`;
+    }
 };
 
+//count()
+//console.log(timer);
 
-
-// function quiz() {
-//     var x = document.getElementById("myRadio");
-
-//     x.checked = true;
-// }
