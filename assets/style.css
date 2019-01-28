@@ -33,3 +33,17 @@ body{
     visibility: hidden;
     font-size: 300%;
 } 
+
+.footer {
+    position: absolute;
+    width: 100%;
+    border-top: 10px solid #4aaaa5;
+    text-align: center;
+    color: white;
+    background-color: #666666;
+    height: 40px;
+    padding-top: 30px; 
+    font-size: 12px;
+    margin-bottom: 0px;
+    /* top: 900px; */
+}
